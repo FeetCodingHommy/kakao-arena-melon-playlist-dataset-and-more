@@ -29,6 +29,8 @@
 
 ## 데이터 Data
 
+* **데이터셋 링크 Link to Dataset: https://arena.kakao.com/c/8/data**
+
 카카오 아레나 사이트에 로그인 및 이용약관 동의 하에 다음과 같은 구성의 데이터셋을 사용할 수 있습니다. With a simple login to Kakao Arena portal and agreement to the terms of use, you can gain access to the following dataset.
 
 데이터셋에서 제공하는 정보는 [멜론](https://www.melon.com/) 서비스에서 수집된 플레이리스트의 일부분입니다. The dataset is a part of the data serviced by [Melon](https://www.melon.com/), the largest music streaming service in Korea.
@@ -144,7 +146,7 @@
 
 ## 코드 Code
 
-<img src="_doc_img/how_my_code_is.jpg" alt="sorry" style="zoom:33%;" />
+<img src="_doc_img/how_my_code_is.jpg" alt="sorry" style="width:350px;" />
 
 각 파이썬 스크립트 파일, 노트북 파일, 모듈들에 대한 설명입니다. This is explanation for The following notebooks, scripts, and modules have been developed for the dataset.
 
