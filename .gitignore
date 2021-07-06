@@ -1,6 +1,9 @@
 ### My Ignore List ###
+scrapy_venv/
 _test_code/
 _temp/
+*.json
+*.csv
 
 # Created by https://www.toptal.com/developers/gitignore/api/venv,pycharm,visualstudiocode,jupyternotebooks
 # Edit at https://www.toptal.com/developers/gitignore?templates=venv,pycharm,visualstudiocode,jupyternotebooks
