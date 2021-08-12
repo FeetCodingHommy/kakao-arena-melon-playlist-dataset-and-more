@@ -8,10 +8,9 @@ import os
 import re
 MELON_JSHREF_REGEX = "javascript:[^\d]+\(\'\d+\',(?P<songId>\d+)\);"
 
-from my_config import COLAB_SCRAPY_PROJECT_PATH
 import sys
-sys.path.append(COLAB_SCRAPY_PROJECT_PATH) # custom_settings에 필요
-import melon_scrapy
+sys.path.append("/content/kakao-arena-melon-playlist-dataset-and-more/melon_scrapy/") # 하드코딩 외 방법을 못찾음
+import melon_scrapy # custom_settings에 필요
 
 
 class TestAlbumToSongSpider(scrapy.Spider):
