@@ -176,7 +176,7 @@ class MelonScrapyDownloaderMiddleware:
             else:
                 pd.DataFrame(FAILED).to_csv(FAILED_DIR, mode='a', index=False, header=False)
 
-            print(f"\\nhit {MY_SAVE_POINT_LENGTH}. update. : success - {len(SUCCEEDED)} / fail - {len(FAILED)}\\n")
+            print(f"\nhit {MY_SAVE_POINT_LENGTH}. update. : success - {len(SUCCEEDED)} / fail - {len(FAILED)}\n")
 
             # 초기화
             SUCCEEDED = list()

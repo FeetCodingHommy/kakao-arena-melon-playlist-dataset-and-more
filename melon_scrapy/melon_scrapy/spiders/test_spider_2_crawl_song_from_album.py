@@ -8,8 +8,9 @@ import os
 import re
 MELON_JSHREF_REGEX = "javascript:[^\d]+\(\'\d+\',(?P<songId>\d+)\);"
 
+from my_config import COLAB_SCRAPY_PROJECT_PATH
 import sys
-sys.path.append("/content/melon_scrapy") # custom_settings에 필요
+sys.path.append(COLAB_SCRAPY_PROJECT_PATH) # custom_settings에 필요
 import melon_scrapy
 
 

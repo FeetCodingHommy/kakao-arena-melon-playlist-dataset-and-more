@@ -27,45 +27,45 @@ class TestSongSpider(scrapy.Spider):
 
         div_info = div_entry.xpath('div[1]')
 
-        print("곡명\\n")
+        print("곡명\n")
         song_name_particles = div_info.xpath("div[1]/text()").getall()
         song_name_full = ''.join([ particle.strip() for particle in song_name_particles if len(particle.strip()) ])
         print(song_name_full)
         del song_name_particles, song_name_full
         print("====================")
 
-        print("가수명\\n")
+        print("가수명\n")
         print(div_info.xpath('div[2]/a/span[1]/text()').getall())
         print("====================")
 
         div_meta = div_entry.xpath('div[2]/dl')
 
         # 앨범
-        print(div_meta.xpath('dt[1]/text()').extract_first(), end="\\n\\n")
+        print(div_meta.xpath('dt[1]/text()').extract_first(), end="\n\n")
         print(div_meta.xpath('dd[1]/a/text()').extract_first())
         print("====================")
 
         # 발매일
-        print(div_meta.xpath('dt[2]/text()').extract_first(), end="\\n\\n")
+        print(div_meta.xpath('dt[2]/text()').extract_first(), end="\n\n")
         print(div_meta.xpath('dd[2]/text()').extract_first())
         print("====================")
 
         # 발매일
-        print(div_meta.xpath('dt[3]/text()').extract_first(), end="\\n\\n")
+        print(div_meta.xpath('dt[3]/text()').extract_first(), end="\n\n")
         print(div_meta.xpath('dd[3]/text()').extract_first())
         print("====================")
 
         # 발매일
-        print(div_meta.xpath('dt[4]/text()').extract_first(), end="\\n\\n")
+        print(div_meta.xpath('dt[4]/text()').extract_first(), end="\n\n")
         print(div_meta.xpath('dd[4]/text()').extract_first())
         print("====================")
 
         div_lyric = fake_response_obj.xpath('//*[@id="d_video_summary"]')
 
         # 가사
-        print("가사\\n")
+        print("가사\n")
         lyrics_lines = div_lyric.xpath('text()').getall()
-        lyrics_full = '\\n'.join([ lyrics_line.strip() for lyrics_line in lyrics_lines if len(lyrics_line.strip()) ])
+        lyrics_full = '\n'.join([ lyrics_line.strip() for lyrics_line in lyrics_lines if len(lyrics_line.strip()) ])
         print(lyrics_full)
         del lyrics_lines, lyrics_full
         # print("====================")
